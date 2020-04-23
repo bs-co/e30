@@ -11,12 +11,10 @@ class ContractRoutes(private val contractHandler: ContractHandler) {
     @Bean
     fun router() = router {
 
-        "/contracts".nest {
-
-            accept(MediaType.APPLICATION_JSON).nest {
-                GET("/create", contractHandler::createContract)
+            (accept(MediaType.APPLICATION_JSON) and "/contracts").nest {
+                POST("/create", contractHandler::createContract)
             }
-        }
+
     }
 
 }

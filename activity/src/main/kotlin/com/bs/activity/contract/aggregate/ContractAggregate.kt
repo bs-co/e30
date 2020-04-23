@@ -17,16 +17,15 @@ import java.util.*
 
 @Aggregate
 @Suppress
-class ContractAggregate {
+class ContractAggregate  {
 
     @AggregateIdentifier
-    lateinit var contractId: ContractId
+    var contractId: ContractId
     lateinit var contractDetails: ContractDetails
     lateinit var contractStatus: ContractStatus
 
-
     @CommandHandler
-    fun ContractAggregate(createContractCommand: CreateContractCommand){
+    constructor(createContractCommand: CreateContractCommand){
         contractId= ContractId(UUID.randomUUID())
         AggregateLifecycle.apply(ContractCreated(contractId, LocalDateTime.now(),createContractCommand.contractDetails))
     }

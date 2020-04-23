@@ -3,11 +3,13 @@ package com.bs.activity.contract.projection
 import com.bs.activity.contract.document.Contract
 import com.bs.activity.contract.event.ContractCreated
 import com.bs.activity.contract.event.ContractOpened
+import com.bs.activity.contract.query.FindAllContractQuery
 import com.bs.activity.contract.query.FindContractQuery
 import com.bs.activity.contract.repository.ContractRepository
 import org.axonframework.eventhandling.EventHandler
 import org.axonframework.queryhandling.QueryHandler
 import org.springframework.stereotype.Component
+import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @Component
@@ -26,6 +28,8 @@ class ContractProjection(val repository: ContractRepository) {
     }
 
     @QueryHandler
-    fun handle(findContractQuery: FindContractQuery): Mono<Contract> = repository.findById(findContractQuery.contractId);
+    fun handle(findContractQuery: FindContractQuery):Mono<Contract> = repository.findById(findContractQuery.contractId)
 
+    @QueryHandler
+    fun handle(findAllContractQuery: FindAllContractQuery): Flux<Contract> = repository.findAll()
 }

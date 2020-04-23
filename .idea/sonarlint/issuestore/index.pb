@@ -3,8 +3,6 @@
 activity/pom.xml,4/b/4b89889a3aee27f843592d3fea800691a0b0497a
 €
 Pactivity/src/main/kotlin/com/bs/activity/contract/aggregate/ContractAggregate.kt,d/9/d96ba4db0810905d7377e5f17570085f89d94b50
-}
-Mactivity/src/main/kotlin/com/bs/activity/contract/command/ContractCommands.kt,5/1/51054b631f085729256f0bac8e73f50e50bec9a1
 y
 Iactivity/src/main/kotlin/com/bs/activity/contract/event/ContractEvents.kt,9/a/9a99a8aac32294ddfaccb89ab28825ec3d0500d7
 t
@@ -41,3 +39,7 @@ g
 7activity/src/main/kotlin/com/bs/activity/Application.kt,b/b/bbc860309da7ee6578f38d75c0c3a73f4a9b642c
 {
 Kactivity/src/main/kotlin/com/bs/activity/contract/web/ContractController.kt,0/d/0d15c60d366bc8cf6f6ef267d5933b90ee068d71
+}
+Mactivity/src/main/kotlin/com/bs/activity/contract/message/ContractCommands.kt,7/d/7d0a973a981fd7c2056ce18b219a8b4682518fbb
+e
+5activity/src/main/resources/META-INF/spring.factories,c/4/c40b31c7c37d91c41eb1a50c197d607bd7462cee
