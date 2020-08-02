@@ -37,8 +37,6 @@ a
 1activity/src/main/kotlin/com/bs/activity/Beans.kt,a/e/ae33bd0c038f5578ffa5ed709cf948650f49f160
 g
 7activity/src/main/kotlin/com/bs/activity/Application.kt,b/b/bbc860309da7ee6578f38d75c0c3a73f4a9b642c
-{
-Kactivity/src/main/kotlin/com/bs/activity/contract/web/ContractController.kt,0/d/0d15c60d366bc8cf6f6ef267d5933b90ee068d71
 }
 Mactivity/src/main/kotlin/com/bs/activity/contract/message/ContractCommands.kt,7/d/7d0a973a981fd7c2056ce18b219a8b4682518fbb
 e

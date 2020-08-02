@@ -12,7 +12,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activito" target="14" />
-      <module name="activity" target="11" />
       <module name="finance" target="11" />
     </bytecodeTargetLevel>
   </component>

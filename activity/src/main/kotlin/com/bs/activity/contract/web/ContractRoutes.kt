@@ -13,6 +13,9 @@ class ContractRoutes(private val contractHandler: ContractHandler) {
 
             (accept(MediaType.APPLICATION_JSON) and "/contracts").nest {
                 POST("/create", contractHandler::createContract)
+                POST("/open", contractHandler::openContract)
+                POST("/close", contractHandler::closeContract)
+                GET("/{id}", contractHandler::getContract)
             }
 
     }

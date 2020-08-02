@@ -9,11 +9,13 @@ import com.bs.activity.contract.repository.ContractRepository
 import org.axonframework.eventhandling.EventHandler
 import org.axonframework.queryhandling.QueryHandler
 import org.springframework.stereotype.Component
+
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 
 @Component
 class ContractProjection(val repository: ContractRepository) {
+
 
     @EventHandler
     fun on(contractCreated: ContractCreated) {

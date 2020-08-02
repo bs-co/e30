@@ -1,0 +1,13 @@
+axon:
+  kafka:
+    clientid: kafka-axon-example
+    defaulttopic: local.event
+    producer:
+      retries: 0
+      bootstrapservers: localhost:9092
+    consumer:
+      group-id: "local.event.consumer-group"
+    publisher:
+      confirmation-mode: wait_for_ack
+    properties:
+      security.protocol: PLAINTEXT
